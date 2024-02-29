@@ -26,13 +26,24 @@ btnSearch.addEventListener("click", function() {
             const localidade = data.logradouro
             const uf = data.logradouro
             const ddd = data.logradouro
-
             document.getElementById('input1').value = data.logradouro
             document.getElementById('input2').value = data.bairro
             document.getElementById('input3').value = data.localidade
             document.getElementById('input4').value = data.uf
             document.getElementById('input5').value = data.ddd
             
+            if(data.erro === 'true'){
+            
+                document.getElementById('cl-input').value = ""
+                
+                document.getElementById('input1').value = ""
+                document.getElementById('input2').value = ""
+                document.getElementById('input3').value = ""
+                document.getElementById('input4').value = ""
+                document.getElementById('input5').value = ""
+            
+                alert('Cep invalido')
+        }
 
             })    
 
