@@ -58,7 +58,7 @@ html {
 
   #container {
     display: flex;
-    height: 33.95rem;
+    height: 52rem;
     display: flex;
     overflow: hidden;
   }
@@ -71,11 +71,14 @@ html {
   }
 
   #cl-text {
+    font-size: 2rem;
     margin: 1rem 0;
   }
 
   #cl-input{
+    font-size: 1.5rem;
     text-align: center;
+    width: 20rem;
     height: 2rem;
     border: 1.5px solid #000000;
     border-radius: 0.5rem;
@@ -109,6 +112,8 @@ input[type=number] {
 
 
   #cl-btn {
+    font-size: 1.0rem;
+    width: ;
     border-radius: 0.5rem;
     color: #fff;
     margin: 1rem;
@@ -116,9 +121,8 @@ input[type=number] {
     overflow: visible;
     border: none;
     height: 1.813rem;
-    width: 10.65rem;
+    width: 20rem;
     background-color: #7fcc53;
-
     box-shadow: inset 0 0 0 0 #7fcc53;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
@@ -140,15 +144,22 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
     width: 50vw;
+
+    font-size: 1.5rem;
   }
 
   .cr-input{
-    height: 1.5rem;
+    font-size: 1.5rem;
+    width: 40rem;
+    height: 2.0rem;
     border: 1px solid #808080;
     border-radius: 0.3rem;
+    
   }
+
+
+
   .cr-input:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
@@ -164,4 +175,95 @@ input[type=number] {
   #footer-icon{
     width: 1rem;
     margin: 0 0.5rem;
+  }
+
+  @media (max-width: 1920px) {
+    #container{
+      height: 53rem;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    #container{
+      height: 51rem;
+    }
+
+    .cr-input{
+      width: 30rem;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    #container {
+      height: 40rem;
+    }
+
+    #container-left {
+      height: 40rem;
+    }
+
+    #cl-text{
+      font-size: 1.5rem;
+    }
+
+    #cl-input{
+      width: 15rem;
+      font-size: 1rem;
+    }
+
+    #cl-btn{
+      width: 15rem;
+    }
+
+    #container-right{
+      font-size: 1.5rem;
+      height: 40rem;
+    }
+
+    .cr-input{
+      height: 2.0rem;
+      font-size: 1.0rem;
+      width: 25rem;
+  }
+}
+
+  @media (max-width: 828px) {
+    #container{
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      height: 35.5rem;
+    }
+
+    #container-left{
+      width: 100vw;
+      height: 10rem;
+      
+    }
+    
+    #cl-text{
+      font-size: 1rem;
+    }
+
+
+    #container-right{
+      align-items: center;
+      width: 100vw;
+      height: 23rem;
+      font-size: 1rem;
+    }
+
+    .cr-input{
+
+      width: 20rem;
+    }
+
+    #footer{
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
   }
